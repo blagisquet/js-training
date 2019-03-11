@@ -10,6 +10,28 @@
  */
 
 // Your code :
+function multiply(x, y)
+{
+  
+    if(y > 0 )
+    {
+        return (x + multiply(x, y-1));
+    }
+    else if(y==0 || x==0)
+    {
+    return 0;
+    }
+   
+    else if(y < 0 )
+    {
+        return -multiply(x, -y);
+    }
+   
+    else {
+        return 0;
+    }
+}
+
 
 //* Begin of tests
 const assert = require('assert')
